@@ -1,6 +1,7 @@
 # 🌦️ ETL Weather API Project
 
-This is a custom ETL pipeline I built to fetch **daily weather data** from an API, transform it, and load it into **Google BigQuery**. The data is also saved locally in `raw_data/` for backup. Finally, the dataset is connected to **Looker Studio** for visualization.
+This is the **Phase 1** implementation of the Weather Data ETL project.  
+It is a custom ETL pipeline I built to fetch **daily weather data** from an API, transform it, and load it into **Google BigQuery**. The data is also saved locally in `raw_data/` for backup. Finally, the dataset is connected to **Looker Studio** for visualization.
 
 ## How It Works
 1. **Extract** → Pulls weather data for multiple cities.
@@ -40,6 +41,12 @@ bigquery:
   dataset: weather_data
   table: weather_data
 ```
+## Output
+
+- Raw JSONs: stored in raw_data/weather_YYYY-MM-DD.json
+
+- BigQuery Table: weather_data.weather_data
+
 ## Visualization
 Connected BigQuery table → Looker Studio
 Built charts by city, timestamp, and weather metrics.
