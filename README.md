@@ -47,9 +47,21 @@ bigquery:
 
 - BigQuery Table: weather_data.weather_data
 
+## Example Data
+
+| city   | temp | humidity | lat   | lon   | timestamp           |
+| ------ | ---- | -------- | ----- | ----- | ------------------- |
+| Lagos  | 29.4 | 85       | 6.45  | 3.39  | 2025-11-05 10:45:00 |
+| London | 11.2 | 72       | 51.50 | -0.12 | 2025-11-05 10:45:00 |
+
 ## Visualization
 Connected BigQuery table → Looker Studio
 Built charts by city, timestamp, and weather metrics.
 Connected BigQuery table → Looker Studio
 
 Built charts by city, timestamp, and weather metrics.
+
+## Author
+
+Seyi Ogundeji
+Data Engineer | Cloud ETL Specialist
